@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客实验室,{% block title %} 来啦 {% endblock %}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div style="margin: auto;width: 50%;">
+        <h1 style="color: aquamarine;">欢迎来到我的博客！</h1>
+
+        <div>
+            <a href="/index" style="font-size: 150%;"> 首页</a>
+            <a href="/articles" style="font-size: 150%;"> 文章</a>
+            <a href="/about" style="font-size: 150%;"> 关于</a>    
+        </div>
+      
+        {% block content %} 
+        这里可以替换内容
+        {% endblock %}
+
+        <h1 style="color: aquamarine;">博客实验室，记录你的生活！！！</h1>
+    </div>
+</body>
+</html>
